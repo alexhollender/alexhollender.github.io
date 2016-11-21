@@ -1,0 +1,17 @@
+form {
+	margin-bottom: 10px;
+}
+
+input#noteInput {
+	width:450px;
+	height: 40px;
+	font-size: 22px;
+}
+
+button {
+	margin-bottom:35px;
+}
+
+div#notesBody {
+	line-height: 2;
+}
