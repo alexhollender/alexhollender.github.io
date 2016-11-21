@@ -47,6 +47,3 @@ var addNote = function() {
 	console.log(newNote);
 
 };
-
-
-
