@@ -21,6 +21,7 @@ var addNote = function() {
 	
 	// store the latest note in var newNote
 	var newNote = notesArray[notesArray.length - 1];
+	// maybe I should just use X
 
 	// make a new paragraph as a child of the notesBody <div> with a classname of "noteItem-(plus)"
 	var makeParagraph = function() {
@@ -46,4 +47,15 @@ var addNote = function() {
 
 	console.log(newNote);
 
-};
+}; 
+
+// add new note
+// push new note to array
+// re-write the entire array each time to display list of notes from entire array with each element in a <p>
+// start with one button called "Delete last element from array" (research .pop), re-render the array
+// get text from <p> and then match it to an item in the array
+// think about using an object where the key is the classname
+// Firebase? hosted database
+// Local Storage, kinda hacky but will work, browser has local storage
+
+// ** for the problem where it's adding multiple items at once, try taking out the perenthesis
