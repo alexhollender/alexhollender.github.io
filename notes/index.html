@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="/notes/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     </head>
     
     <body>
-
+      <main>
 	    <form id="mainForm">
-	    	Add Note:<br>
-	  		<input type="text" name="note" value="" id="noteInput"">
+	  		<input type="text" name="note" value="" id="noteInput">
 		</form>
-
-	  	<button type="reset" form="mainForm" id="addNoteButton">Add Note</button>
-
+	  	<button type="reset" form="mainForm" id="addNoteButton">Add Task</button>
 		<div id="notesList">
-			<p class="title">Notes:</p>
+			<p class="title">Active Tasks:</p>
+			<script type="text/x-handlebars-template" id="taskListTemplate">
+			    <div class="noteItem">
+			        <div>{{NoteContents}}</div>
+			        <button class="delete">Delete</button>
+			    </div>
+			</script>
 		</div>
+		<div id="disabledNotesList"></div>
+	  </main>
 
     </body>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="/notes/js/notesAppcopy.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+    <script src="js/appHandlebars.js"></script>
 
 </html>

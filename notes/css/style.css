@@ -4,14 +4,43 @@ form {
 
 input#noteInput {
 	width:450px;
-	height: 40px;
+	padding:4px 5px 70px;
 	font-size: 22px;
 }
 
-button {
-	margin-bottom:35px;
+button#addNoteButton {
+	width:450px;
+	height:60px;
+	border-radius: 5px;
+	font-size:18px;
+}
+
+button.delete {
+	margin:0 10px 0 10px;
+}
+
+button.delete, button.status {
+	vertical-align: middle;
+}
+
+div#notesList {
+	margin-top:50px;
 }
 
 div#notesBody {
 	line-height: 2;
+}
+
+div.noteItem {
+	margin:25px 0 0 0;
+	font-size: 22px;
+	font-family: sans-serif;
+}
+
+div.disabled {
+	opacity: 0.5;
+}
+
+div#disabledNotesList {
+	margin-top:50px;
 }

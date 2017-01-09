@@ -54,17 +54,3 @@ addNoteButton.onclick = function() {
 	displayNotes();
 	removableNotes();
 };
-
-/*
-var whoTheFuckKnows = function() {
-	var myItem = document.getElementById("3");
-	myItem.onclick = function() {
-  		console.log(this.id);
-	};
-}
-*/
-
-// figure out how to do the deleting thing with JS
-// think about using an object where the key is the classname
-// Firebase? hosted database
-// Local Storage, kinda hacky but will work, browser has local storage
